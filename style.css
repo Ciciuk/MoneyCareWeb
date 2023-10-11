@@ -1,14 +1,16 @@
-.logo{
+#logo{
     /*background-color: #EEE9DA;*/
     justify-content: center;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 900;
 
+    background: linear-gradient(300deg, #6096B4, #BDCDD6, #EEE9DA);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
 
-        background: linear-gradient(300deg, #6096B4, #BDCDD6, #EEE9DA);
-        background-size: 180% 180%;
-        animation: gradient-animation 18s ease infinite;
+    padding-top: 15px;
+    padding-bottom: 5px;
 
-        padding-top: 15px;
-        padding-bottom: 5px;
-
-        letter-spacing: 3px;
+    letter-spacing: 3px;
 }
