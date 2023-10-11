@@ -9,8 +9,8 @@
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 15px;
 
     letter-spacing: 3px;
 }
