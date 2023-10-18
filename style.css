@@ -18,3 +18,21 @@
 #form{
     background-color:#f8f7f2 ;
 }
+
+#title{
+    background-color:#ffffff ;
+}
+caption#tableTitle {
+    caption-side: top;
+    text-align: center;
+
+}
+
+#CurAccDFlex{
+justify-content: space-evenly;
+}
+
+#valueOK{
+    background-color: rgb(20, 184, 129);
+    text-align: center;
+}
