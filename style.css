@@ -36,3 +36,8 @@ justify-content: space-evenly;
     background-color: rgb(20, 184, 129);
     text-align: center;
 }
+
+#rowMarginPlus{
+margin-left: 15px;
+margin-right: 15px;
+}
