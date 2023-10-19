@@ -96,7 +96,7 @@
             <div>
               <div class="table-responsive-md">
                 <table class="table caption-top">
-                  <caption id="tableTitle">
+                  <caption>
                     <h3>Wydatki</h3>
                   </caption>
                   <thead class="table-dark">
@@ -161,9 +161,9 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title fs-5" id="staticBackdropLabel">
+                    <h4 class="modal-title fs-5" id="staticBackdropLabel">
                       Wybierz okres do wyświetlenia
-                    </h3>
+                    </h4>
                     <button
                       type="button"
                       class="btn-close"
@@ -176,7 +176,6 @@
                     <div
                       class="input-group date mb-3"
                       id="datepicker1"
-                      aria-label="date1"
                       data-date-today-Highlight="true"
                       data-date-days-Of-Week-Highlighted="[0,6]"
                       data-date-format="yyyy-mm-dd"
@@ -197,7 +196,6 @@
                     <div
                       class="input-group date mb-3"
                       id="datepicker2"
-                      aria-label="date2"
                       data-date-today-Highlight="true"
                       data-date-days-Of-Week-Highlighted="[0,6]"
                       data-date-format="yyyy-mm-dd"
@@ -234,7 +232,7 @@
             <div>
               <div class="table-responsive-md">
                 <table class="table caption-top">
-                  <caption id="tableTitle">
+                  <caption >
                     <h3>Dochody</h3>
                   </caption>
                   <thead class="table-dark">
@@ -276,11 +274,10 @@
       </article>
     </main>
 
-    <script type="text/javascript">
+    <script>
       $(function () {
         $("#datepicker2").datepicker();
         $("#datepicker1").datepicker();
-        
       });
       $.fn.datepicker.dates["pl"] = {
         days: [
@@ -364,7 +361,6 @@
     </footer>
 
     <script
-      type="text/javascript"
       src="/Resources/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
