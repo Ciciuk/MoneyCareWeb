@@ -1,183 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wprowadzanie wydatku</title>
 
-<link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-</head>
-<body class="d-flex flex-column min-vh-100">
-    <header >
-        <div class="container-fluid" id="logo"> 
-            <div >
-                <div class="h-100 d-flex align-items-center justify-content-center">
-               <h1><img src="./image/coin.svg" alt="many coins stack together" height="55"> Money Saver</h1>
-              </div>
-            </div>
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        
-              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link " href="main.html">Strona główna</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " >Logowanie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./register.html">Rejestracja</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./outcomePage.html">Wprowadzanie wydatku</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <div class="container-fluid" id="logo">
+        <div>
+          <div class="h-100 d-flex align-items-center justify-content-center">
+            <h1>
+              <img
+                src="./image/coin.svg"
+                alt="many coins stack together"
+                height="55"
+              />
+              Money Saver
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        aria-label="Tenth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample08"
+            aria-controls="navbarsExample08"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarsExample08"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="main.html">Strona główna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Logowanie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Rejestracja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./outcomePage.html"
+                  >Wprowadzanie wydatku</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <article>
-            <section class="container-fluid" id="form" >
-              <div>
-                <h3 class=" row justify-content-center pt-4 pb-2" id="title">Wprowadź  wydatek</h3>
-              </div>
-                
-                <form>
-                  <div class="row justify-content-center  g-5 py-5">
-                    <div class="col-6">
-                      <div class="input-group mb-3"> 
-                          <span class="input-group-text"><img src="./image/pen.png" alt="mail icon"></span>
-                          <input type="text" class="form-control" placeholder="Nazwa" aria-label="name">
-                      </div>
-                      <div class="input-group mb-3"> 
-                        <span class="input-group-text"><img src="./image/pen.png" alt="mail icon"></span>
-                        <input type="text" class="form-control" placeholder="Komentarz" aria-label="comment">
-                      </div>
+      <article>
+        <section class="container-fluid" id="form">
+          <div>
+            <h3 class="row justify-content-center pt-4 pb-2" id="title">
+              Wprowadź wydatek
+            </h3>
+          </div>
 
+          <form>
+            <div class="row justify-content-center g-5 py-5">
+              <div class="col-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text"
+                    ><img src="./image/pen.png" alt="mail icon"
+                  /></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nazwa"
+                    aria-label="name"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text"
+                    ><img src="./image/pen.png" alt="mail icon"
+                  /></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Komentarz"
+                    aria-label="comment"
+                  />
+                </div>
 
-                      <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-block btn-outline-secondary  mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Wybierz kategorię
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-block btn-outline-secondary mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Wybierz kategorię
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="staticBackdropLabel">
+                          Wybierz kategorie wydatku
+                        </h3>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckFood"
+                          />
+                          <label class="form-check-label" for="flexCheckFood">
+                            Jedzenie
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckFun"
+                          />
+                          <label class="form-check-label" for="flexCheckFun">
+                            Rozrywka
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckTransport"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckTransport"
+                          >
+                            Transport
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckHouse"
+                          />
+                          <label class="form-check-label" for="flexCheckHouse">
+                            Dom
+                          </label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Zamknij
                         </button>
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="staticBackdropLabel">Wybierz kategorie wydatku</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckFood">
-          <label class="form-check-label" for="flexCheckFood">
-            Jedzenie
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckFun" >
-          <label class="form-check-label" for="flexCheckFun">
-            Rozrywka
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckTransport" >
-          <label class="form-check-label" for="flexCheckTransport">
-            Transport
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckHouse" >
-          <label class="form-check-label" for="flexCheckHouse">
-            Dom
-          </label>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
-        <button type="button" class="btn btn-primary">Potwierdź</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-                      <div class="input-group mb-3">
-                          <span class="input-group-text"><img src="./image/pen.png" alt="lock icon"></span>
-                          <input type="text" class="form-control" placeholder="Kwota" aria-label="Amount">
-                      </div>
-
-                            <div class="input-group date mb-3" id="datepicker" data-date-today-Highlight = true data-date-days-Of-Week-Highlighted=[0,6] data-date-format ="yyyy-mm-dd" data-date-language="pl" >
-                              <div class="input-group-prepend">
-                                <span class="input-group-text ">
-                                  <img src="./image/calendar.png" alt="calendar icon">
-                                </span>
-                            </div>  
-                              <input type="text" class="form-control" placeholder="Wybierz datę">
-
-                            </div>
-
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-block btn-primary btn-lg px-4 me-md-2">Potwierdź</button>
-                       
+                        <button type="button" class="btn btn-primary">
+                          Potwierdź
+                        </button>
                       </div>
                     </div>
                   </div>
-                </form>
-            </section>
-        </article>
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text"
+                    ><img src="./image/pen.png" alt="lock icon"
+                  /></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Kwota"
+                    aria-label="Amount"
+                  />
+                </div>
+
+                <div
+                  class="input-group date mb-3"
+                  id="datepicker"
+                  data-date-today-Highlight="true"
+                  data-date-days-Of-Week-Highlighted="[0,6]"
+                  data-date-format="yyyy-mm-dd"
+                  data-date-language="pl"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <img src="./image/calendar.png" alt="calendar icon" />
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Wybierz datę"
+                  />
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button
+                    type="button"
+                    class="btn btn-block btn-primary btn-lg px-4 me-md-2"
+                  >
+                    Potwierdź
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        
+      </article>
     </main>
 
     <script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker();
-        });
-        $.fn.datepicker.dates['pl'] = 
-        {
-                    days: ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
-                    daysShort: ["Niedz.", "Pon.", "Wt.", "Śr.", "Czw.", "Piąt.", "Sob."],
-                    daysMin: ["Ndz", "Pn", "Wt", "Śr", "Czw", "Pt", "Sob"],
-                    months: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"],
-                    monthsShort: ["Sty.", "Lut.", "Mar.", "Kwi.", "Maj", "Cze.", "Lip.", "Sie.", "Wrz.", "Paź.", "Lis.", "Gru."],
-                    today: "Dzisiaj",
-                    weekStart: 1,
-                    clear: "Wyczyść",
-        }
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+      $.fn.datepicker.dates["pl"] = {
+        days: [
+          "Niedziela",
+          "Poniedziałek",
+          "Wtorek",
+          "Środa",
+          "Czwartek",
+          "Piątek",
+          "Sobota",
+        ],
+        daysShort: ["Niedz.", "Pon.", "Wt.", "Śr.", "Czw.", "Piąt.", "Sob."],
+        daysMin: ["Ndz", "Pn", "Wt", "Śr", "Czw", "Pt", "Sob"],
+        months: [
+          "Styczeń",
+          "Luty",
+          "Marzec",
+          "Kwiecień",
+          "Maj",
+          "Czerwiec",
+          "Lipiec",
+          "Sierpień",
+          "Wrzesień",
+          "Październik",
+          "Listopad",
+          "Grudzień",
+        ],
+        monthsShort: [
+          "Sty.",
+          "Lut.",
+          "Mar.",
+          "Kwi.",
+          "Maj",
+          "Cze.",
+          "Lip.",
+          "Sie.",
+          "Wrz.",
+          "Paź.",
+          "Lis.",
+          "Gru.",
+        ],
+        today: "Dzisiaj",
+        weekStart: 1,
+        clear: "Wyczyść",
+      };
     </script>
 
-    
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top mt-auto"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© 2023, Wszelkie prawa zastrzeżone
+        </span>
+      </div>
 
-<script type="text/javascript" 
-src="/Resources/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
-
-
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top mt-auto">
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2023, Wszelkie prawa zastrzeżone </span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="https://linkedin.com/in/mateusz-miciuk"><img src="./image/linkedin.svg" alt="linkedin icon" class="bi" width="24" height="24"></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./image/contact.svg" alt="contact icon" class="bi" width="24" height="24"></a></li>
-        </ul>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a
+            class="text-body-secondary"
+            href="https://linkedin.com/in/mateusz-miciuk"
+            ><img
+              src="./image/linkedin.svg"
+              alt="linkedin icon"
+              class="bi"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"
+            ><img
+              src="./image/contact.svg"
+              alt="contact icon"
+              class="bi"
+              width="24"
+              height="24"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
